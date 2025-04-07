@@ -19,3 +19,5 @@ Whether you're building a small project or a large-scale application, this boile
 - `npm run build` - Builds for production, emitting to `dist/`. Prerenders all found routes in app to static HTML
 - `npm run preview` - Starts a server at http://localhost:4173/ to test production build locally
 - `npm run lint` - Runs the `biome check --write .` command, which performs linting on the codebase.
+
+This boilerplate is perfect for developers who want a fast, efficient, and scalable setup for their Preact projects. Happy coding! 🎉
