@@ -14,4 +14,4 @@
 
 -   `npm run preview` - Starts a server at http://localhost:4173/ to test production build locally
 
--   `npm run lint` - Runs the biome check --write . command, which performs linting on the codebase.
+-   `npm run lint` - Runs the `biome check --write .` command, which performs linting on the codebase.
