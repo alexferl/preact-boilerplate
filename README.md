@@ -1,6 +1,5 @@
 # preact-boilerplate
 
-## Description
 `preact-boilerplate` is a lightweight and modern starter template designed to help developers quickly build web applications using [Preact](https://preactjs.com/) and [Vite](https://vite.dev/). This boilerplate provides an optimized development environment with fast builds, hot module replacement, and production-ready configurations. It also includes code linting to ensure high-quality code.
 
 ## Features
