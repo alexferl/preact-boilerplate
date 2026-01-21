@@ -7,10 +7,10 @@ COPY . .
 RUN npm run build
 
 # Production stage with Caddy
-FROM caddy:2.9.1-alpine
+FROM caddy:2.10.2-alpine
 
-RUN addgroup -g 1337 -S caddy && \
-    adduser -u 1337 -S caddy -G caddy
+RUN addgroup -g 65532 -S caddy && \
+    adduser -u 65532 -S caddy -G caddy
 
 RUN chown -R caddy:caddy /usr/share/caddy /config /data
 
