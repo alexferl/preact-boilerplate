@@ -25,3 +25,38 @@
 
 ### Code Quality
 - `npm run lint` - Runs Biome to check and automatically fix code style issues
+
+## Deployment
+
+### Docker
+
+This boilerplate includes a production-ready Docker setup using Caddy as the web server.
+
+**Build the Docker image:**
+```bash
+docker build -t preact-app .
+```
+
+**Run the container:**
+```bash
+docker run -p 80:80 -p 443:443 preact-app
+```
+
+The application will be available at http://localhost
+
+### Caddy Configuration
+
+The included Caddy configuration (`etc/caddy/Caddyfile`) provides:
+
+- **SPA Support**: Automatic routing to `index.html` for client-side routing
+- **Security Headers**: Comprehensive security headers including CSP, COOP, COEP, and more
+- **Gzip/Zstd Compression**: Efficient content encoding for faster loads
+- **Health Check**: `/healthz` endpoint for monitoring
+- **Caching**: Immutable asset caching for JavaScript files
+
+### Production Features
+
+- Multi-stage Docker build for optimized image size
+- Non-root user for enhanced security
+- Static file serving with proper MIME types
+- Production-ready security configuration
